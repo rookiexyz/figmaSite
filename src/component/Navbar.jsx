@@ -11,20 +11,20 @@ const Navbar = () => {
   } 
 
   return (
-    <div className='container mx-auto flex justify-between lg:pt-[83px] pt-[50px] lg:pb-[97px] pb-[50px]'>
+    <nav className='w-full px-32 py-8 font-medium flex items-center justify-between'>
       <div className='w-[20%]'>
         <a href="/" className='mr-[116px]'>Logo</a>
       </div>
-      <div className='w-[80%]'>
-        <a href="/" className='menu-style hover:text-site-red transition-all'>Services</a>
-        <a href="/" className='menu-style mx-[48px] hover:text-site-red transition-all'>Team</a>
-        <a href="/" className='menu-style hover:text-site-red transition-all'>Testimonial</a>
-        <a href="/" className='menu-style ml-[55%] hover:text-site-red transition-all'>Contact</a>
+      <div className={click ? 'fixed right-0 top-[90px] w-[30%] h-[100%] bg-site-blue flex flex-col items-center' : 'w-[80%] md:block hidden'}>
+        <a href="/" className='menu-style hover:text-site-red transition-all hover:border-b-[3px] border-site-red mb-[20px] mt-[20px]'>Services</a>
+        <a href="/" className='menu-style md:mx-[48px] hover:text-site-red transition-all hover:border-b-[3px] border-site-red mb-[20px]'>Team</a>
+        <a href="/" className='menu-style hover:text-site-red transition-all hover:border-b-[3px] border-site-red mb-[20px]'>Testimonial</a>
+        <a href="/" className='menu-style md:absolute md:right-[10%] hover:text-site-red transition-all hover:border-b-[3px] border-site-red'>Contact</a>
       </div>
-      <div className='hidden' onClick={handleClick}>
+      <div className='md:hidden sm:inline-block' onClick={handleClick}>
         {click ? (<FaTimes size={30} style={{color: '#f8f8f8'}}/>) : (<FaBars size={30} style={{color: '#f8f8f8'}}/>)}
       </div>
-    </div>
+    </nav>
   )
 }
 
