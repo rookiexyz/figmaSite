@@ -1,6 +1,6 @@
 import React from "react"
 import Button from "./Button"
-import { WhiteLine } from "./Icons"
+import { RedLine, WhiteLine } from "./Icons"
 
 export default function Content() {
   return (
@@ -15,7 +15,14 @@ export default function Content() {
                     your dream.
                 </p>
                 <Button />
+            </div>
+        </div>
+        <div className="w-full h-full justify-center items-center">
+            <div className="">
                 <WhiteLine />
+            </div>
+            <div className="">
+                <RedLine />
             </div>
         </div>
     </div>
