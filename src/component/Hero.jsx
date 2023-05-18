@@ -17,7 +17,7 @@ export default function Content() {
                 <Button />
             </div>
         </div>
-        <div className="w-full h-full justify-center items-center">
+        <div className="w-full h-auto">
             <div className="">
                 <WhiteLine />
             </div>
