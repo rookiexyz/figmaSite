@@ -1,12 +1,11 @@
 import React from "react"
 import Button from "./Button"
-import { RedLine, WhiteLine } from "./Icons"
-import VRPic from '../images/vr1.png'
+import wholePic from '../images/u1.png'
 
 
 export default function Content() {
   return (
-    <div className="w-full h-auto justify-between bg-site-blue ">
+    <div className="w-full h-auto bg-site-blue ">
         <div className=" w-[770px] h-[491px] pr-[50px] mx-40 my-[5%] flex flex-row justify-between box-border">
             <div className=" flex flex-col justify-between h-[100%] box-border">
                 <p className="  border-[#fbe8d3ff] text-8xl leading-[110%] font-work sans font-[700]">
@@ -18,17 +17,9 @@ export default function Content() {
                 </p>
                 <Button />
             </div>
-            <div className="w-full h-auto justify-end items-end flex flex-row-reverse">
-                <img src={VRPic} alt="virtual Reality" />
-            </div>
         </div>
-        <div className="w-full h-auto">
-            <div>
-                <WhiteLine />
-            </div>
-            <div>
-                <RedLine />
-            </div>
+        <div>
+            <img src={wholePic} alt="" />
         </div>
     </div>
   )
