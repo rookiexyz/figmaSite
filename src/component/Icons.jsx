@@ -4,6 +4,7 @@ export const WhiteLine = ({ className, ...rest }) => (
     <svg
       width={1440}
       height={332}
+      viewBox="0 0 1440 332"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...rest}
@@ -21,6 +22,7 @@ export const RedLine = ({ className, ...rest }) => (
     <svg
       width={934}
       height={429}
+      
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...rest}
